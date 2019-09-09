@@ -27,7 +27,7 @@ stop_words.extend(['from', 'subject', 're', 'edu', 'use'])
 
 df = pd.read_csv('pre_processed_data.csv')
 orig_df = df
-df.rename(columns={'0': "content", '1': "labels"}, inplace=True)
+df.rename(columns={'2': "content", '3': "labels"}, inplace=True)
 data = df.content.values.tolist()
 data_list = list(data)
 data_words = [i.split() for i in data_list]
@@ -115,7 +115,8 @@ lda_model = gensim.models.ldamodel.LdaModel(corpus=corpus,
                                            chunksize=100,
                                            passes=10,
                                            alpha='auto',
-                                           per_word_topics=True)
+                                           per_word_topics=True,
+                                            minimum_probability=0)
 
 # Print the Keyword in the 10 topics
 pprint(lda_model.print_topics())
