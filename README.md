@@ -6,7 +6,7 @@ Ohsumed (http://davis.wpi.edu/xmdv/datasets/ohsumed.html)
 A curated text collection from MEDLINE, an online medical information database.
 
 # Features
-Our approach is an ensemble work of features from LDA and Word2Vec based approaches.
+Our approach is an ensemble work of features from LDA and Graph convolution.
 
 # Code Description
 
