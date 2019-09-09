@@ -14,7 +14,8 @@ Our approach is an ensemble work of features from LDA and Graph Convolution.
 * The data is then converted to LDA probability matrix using `data_to_pandas.py`
 * The GCN features are calculated considering various parameters and stored for training.
 * `SGC/downstream/TextSGC/` contains the model files for training the different network architectures.
+* The model also involves the use of skip-architecture which improves model performance.
 
 The features obtained from LDA together with the GCN features are merged in a systematic fashion to obtain a
-feature rich map which is then fed into a custom-build Gmodel. Experiments were carried on to obtain optimal results.
+feature rich map which is then fed into a custom-build model. Experiments were carried on to obtain optimal results.
 
