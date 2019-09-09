@@ -1,4 +1,4 @@
-# Topic-Modelling + LDA
+# Topic-Modelling GCN + LDA
 This repository explores Latent Dirichlet Allocation methods for text based classification employing various Graph Convolutional Networks.
 
 # Dataset 
