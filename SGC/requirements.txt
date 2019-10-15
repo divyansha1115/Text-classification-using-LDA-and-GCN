@@ -1,5 +1,0 @@
-numpy
-scipy
-networkx==1.11
-scikit-learn
-hyperopt==0.1.1
